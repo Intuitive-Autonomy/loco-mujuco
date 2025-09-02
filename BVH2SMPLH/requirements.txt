@@ -1,0 +1,18 @@
+# BVH to SMPL-H Retargeting Pipeline Dependencies
+
+# Core scientific computing
+numpy>=1.21.0,<2.0
+scipy>=1.7.0
+
+# MuJoCo physics simulation (specific version required)
+mujoco==3.2.7
+mujoco-mjx==3.2.7
+
+# LocoMuJoCo locomotion framework
+loco-mujoco>=1.0.1
+
+# Optional: Enhanced argument parsing (included in Python 3.2+)
+argparse; python_version < "3.2"
+
+# Optional: Type checking support
+typing_extensions; python_version < "3.8"

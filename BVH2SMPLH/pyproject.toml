@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=45", "wheel", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bvh2smplh"
+version = "1.0.0"
+description = "Professional BVH to SMPL-H retargeting pipeline for LocoMuJoCo"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+    {name = "Choon Pin", email = "choonpin.wong@intuitiveautonomy.com"}
+]
+keywords = ["bvh", "motion-capture", "smpl-h", "retargeting", "mujoco", "locomotion"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research", 
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9", 
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Multimedia :: Graphics :: 3D Modeling",
+]
+dependencies = [
+    "numpy>=1.21.0,<2.0",
+    "scipy>=1.7.0",
+    "mujoco==3.2.7",
+    "mujoco-mjx==3.2.7",
+    "loco-mujoco>=1.0.1",
+]
+
+[project.urls]
+Homepage = "https://github.com/Intuitive-Autonomy/loco-mujuco"
+Documentation = "https://github.com/Intuitive-Autonomy/loco-mujuco/blob/master/BVH2SMPLH/README.md"
+Repository = "https://github.com/Intuitive-Autonomy/loco-mujuco.git"
+"Bug Tracker" = "https://github.com/Intuitive-Autonomy/loco-mujuco/issues"
+
+[project.scripts]
+bvh2smplh = "mocap_retarget:main"
+bvh-parse = "proper_bvh_retargeting:main"
+
+[tool.setuptools]
+packages = ["bvh2smplh"]
+
+[tool.setuptools.package-dir]
+bvh2smplh = "."
