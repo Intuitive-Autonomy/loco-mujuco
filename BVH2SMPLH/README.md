@@ -125,7 +125,6 @@ pip install .
 
 # After installation, use console commands
 bvh2smplh --help
-bvh-parse ../Mocap/motion.bvh
 ```
 
 ### **Verify Installation**

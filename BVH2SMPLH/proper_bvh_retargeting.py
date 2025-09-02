@@ -251,8 +251,8 @@ def get_bvh_joint_info(joint_names: List[str], joint_channels: List[Tuple[int, L
     return joint_info
 
 
-if __name__ == "__main__":
-    # Example usage
+def main():
+    """Main CLI entry point for BVH parsing utilities."""
     import argparse
     
     parser = argparse.ArgumentParser(description='BVH Parsing Utilities Test')
@@ -285,4 +285,8 @@ if __name__ == "__main__":
     except Exception as e:
         print(f"Error: {e}")
         exit(1)
+
+
+if __name__ == "__main__":
+    main()
 

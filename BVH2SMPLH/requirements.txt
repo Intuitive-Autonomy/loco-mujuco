@@ -9,7 +9,7 @@ mujoco==3.2.7
 mujoco-mjx==3.2.7
 
 # LocoMuJoCo locomotion framework
-loco-mujoco>=1.0.1
+loco-mujoco>=1.0.0
 
 # Optional: Enhanced argument parsing (included in Python 3.2+)
 argparse; python_version < "3.2"

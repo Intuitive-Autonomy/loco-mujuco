@@ -47,8 +47,7 @@ setup(
     install_requires=read_requirements(),
     entry_points={
         'console_scripts': [
-            'bvh2smplh=mocap_retarget:main',
-            'bvh-parse=proper_bvh_retargeting:main',
+            'bvh2smplh=bvh2smplh.mocap_retarget:main',
         ],
     },
     keywords="bvh motion-capture smpl-h retargeting mujoco locomotion",
